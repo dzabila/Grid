@@ -1,0 +1,100 @@
+body {
+  display: grid;
+  grid-template-areas: 
+  "header menu menu menu"
+  "hero hero hero hero"
+  "main main none image"
+  "main main none extra"
+  "banner banner banner banner";
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 50px 300px 300px 200px 100px;
+  height: 100vh;
+}
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: header;
+  font-size: 30px;
+  color: white;
+  background-color: yellowgreen;
+}
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: menu;
+  font-size: 30px;
+  color: white;
+  background-color: yellow;
+}
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: hero;
+  font-size: 30px;
+  color: white;
+  background-color: teal;
+}
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: main;
+  font-size: 30px;
+  color: white;
+  background-color: palegreen;
+}
+.image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: image;
+  font-size: 30px;
+  color: white;
+  background-color: palegoldenrod;
+}
+.extra {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: extra;
+  font-size: 30px;
+  color: white;
+  background-color: yellowgreen;
+}
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: banner;
+  font-size: 30px;
+  color: white;
+  background-color: palevioletred;
+}
+@media (max-width:1440px) {
+  body {
+    grid-template-areas: 
+    "header header header header"
+    "hero hero hero hero"
+    "menu main main main"
+    "menu banner banner banner"
+    "menu extra extra image";
+    grid-template-rows: 50px 200px 200px 100px 100px;
+  }
+}
+@media (max-width: 1024px) {
+  body {
+    grid-template-areas: 
+    "header"
+    "menu"
+    "hero"
+    "main"
+    "banner"
+    "extra"
+    "image";
+    grid-template-rows: 50px 50px 150px 150px 100px 100px 100px;
+    grid-template-columns: 1fr;
+  }
+}
