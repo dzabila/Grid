@@ -7,7 +7,7 @@ body {
   "main main none extra"
   "banner banner banner banner";
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 50px 300px 300px 200px 100px;
+  grid-template-rows: 50px 300px 250px 250px 100px;
   height: 100vh;
 }
 .header {
